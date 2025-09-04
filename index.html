@@ -1,86 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deals Drop</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deals Drop - Price Drop Deals</title>
   <style>
     body {
       margin: 0;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9fafc;
+      background: #fefefe;
+      color: #111;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+      padding: 40px 20px;
       text-align: center;
     }
-
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-      color: #111;
-    }
-
-    .logo-row {
+    header {
+      font-weight: 800;
+      font-size: 3rem;
+      color: #1a1a1a;
+      margin-bottom: 16px;
       display: flex;
-      gap: 40px;
       justify-content: center;
       align-items: center;
-      margin-bottom: 40px;
+      gap: 10px;
+      user-select: none;
+    }
+    header span {
+      font-size: 2.5rem;
+      color: #f63e3e;
+    }
+    .description {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin-bottom: 36px;
+      color: #333;
+    }
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      margin-bottom: 48px;
       flex-wrap: wrap;
     }
-
-    .logo-row img {
-      max-width: 120px;
-      height: auto;
-      transition: transform 0.2s ease-in-out;
+    .logos img {
+      height: 60px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
     }
-
-    .logo-row img:hover {
-      transform: scale(1.1);
+    .logos img:hover {
+      transform: scale(1.15);
     }
-
+    .price-tag {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #f63e3e;
+      background: #ffeaea;
+      border-radius: 50px;
+      padding: 8px 20px;
+      letter-spacing: 1px;
+      box-shadow: 0 0 6px rgba(246, 62, 62, 0.4);
+      display: inline-block;
+      margin-bottom: 40px;
+      user-select: none;
+    }
     .btn {
       background: #0088cc;
       color: white;
-      padding: 14px 28px;
+      padding: 16px 36px;
       border-radius: 30px;
       text-decoration: none;
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       font-weight: bold;
-      box-shadow: 0px 4px 10px rgba(0, 136, 204, 0.3);
-      transition: all 0.2s ease-in-out;
+      box-shadow: 0px 5px 14px rgba(0, 136, 204, 0.4);
+      transition: all 0.25s ease-in-out;
+      user-select: none;
     }
-
     .btn:hover {
-      background: #0077b6;
-      box-shadow: 0px 6px 15px rgba(0, 136, 204, 0.5);
+      background: #006699;
+      box-shadow: 0 8px 20px rgba(0, 102, 153, 0.6);
     }
-
     footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.8rem;
+      margin-top: auto;
+      padding: 10px 0;
+      font-size: 0.85rem;
       color: #666;
+      user-select: none;
     }
   </style>
 </head>
 <body>
-  <h1>💥 DEALS DROP 💥</h1>
-
-  <div class="logo-row">
-    <img src="image/myntra.png" alt="Myntra Logo">
-    <img src="image/flipkart.png" alt="Flipkart Logo">
-    <img src="image/amazon.png" alt="Amazon Logo">
+  <header>
+    <span>💥</span> DEALS DROP <span>💥</span>
+  </header>
+  <div class="description">
+    Catch the hottest price drops on top brands before anyone else! Save big on Myntra, Flipkart, Amazon & more.
   </div>
-
-  <a href="https://t.me/sageflixsales" target="_blank" class="btn">🚀 Join on Telegram</a>
-
-  <footer>
-    © 2025 Deals Drop. All Rights Reserved.
-  </footer>
+  <div class="logos">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Myntra_Logo.png" alt="Myntra Logo" title="Myntra" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Flipkart_logo.PNG" alt="Flipkart Logo" title="Flipkart" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" title="Amazon" />
+  </div>
+  <div class="price-tag">Today’s Hot Deals & Price Drops</div>
+  <a href="https://t.me/sageflixsales" target="_blank" class="btn" rel="noopener noreferrer">
+    🚀 Join on Telegram
+  </a>
+  <footer>© 2025 Deals Drop. All Rights Reserved.</footer>
 </body>
 </html>
