@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deals Drop</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #ffffff, #f9f9f9);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafc;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -18,66 +18,69 @@
     }
 
     h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      color: #222;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #111;
     }
 
-    .logos {
+    .logo-row {
       display: flex;
-      gap: 30px;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
+      gap: 40px;
       justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
     }
 
-    .logos img {
-      height: 60px;
-      object-fit: contain;
-      transition: transform 0.3s ease;
+    .logo-row img {
+      max-width: 120px;
+      height: auto;
+      transition: transform 0.2s ease-in-out;
     }
 
-    .logos img:hover {
+    .logo-row img:hover {
       transform: scale(1.1);
     }
 
     .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
       background: #0088cc;
-      color: #fff;
-      font-size: 1.2rem;
-      font-weight: bold;
-      padding: 15px 30px;
-      border-radius: 50px;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
       text-decoration: none;
-      box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3);
-      transition: background 0.3s ease, transform 0.2s ease;
+      font-size: 1.1rem;
+      font-weight: bold;
+      box-shadow: 0px 4px 10px rgba(0, 136, 204, 0.3);
+      transition: all 0.2s ease-in-out;
     }
 
     .btn:hover {
-      background: #006f9e;
-      transform: translateY(-2px);
+      background: #0077b6;
+      box-shadow: 0px 6px 15px rgba(0, 136, 204, 0.5);
     }
 
-    .btn img {
-      height: 20px;
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.8rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <h1>DEALS DROP</h1>
+  <h1>💥 DEALS DROP 💥</h1>
 
-  <div class="logos">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Myntra_logo.png" alt="Myntra Logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flipkart_logo.png" alt="Flipkart Logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+  <div class="logo-row">
+    <img src="images/myntra.png" alt="Myntra Logo">
+    <img src="images/flipkart.png" alt="Flipkart Logo">
+    <img src="images/amazon.png" alt="Amazon Logo">
   </div>
 
-  <a class="btn" href="https://t.me/sageflixsales" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo">
-    Join on Telegram
-  </a>
+  <a href="https://t.me/sageflixsales" target="_blank" class="btn">🚀 Join on Telegram</a>
+
+  <footer>
+    © 2025 Deals Drop. All Rights Reserved.
+  </footer>
 </body>
 </html>
