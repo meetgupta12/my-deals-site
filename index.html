@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SageFlix Loot Deals - Deals on Amazon, Flipkart, Ajio, Myntra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .main-container {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .join-button {
+      background-color: #28a745;
+      color: white;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      margin-top: 20px;
+    }
+    .join-button:hover {
+      background-color: #218838;
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    }
+    .brand-logos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .brand-logos img {
+      height: 50px;
+      width: auto;
+      transition: transform 0.3s;
+      background: white;
+      border-radius: 8px;
+      padding: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .brand-logos img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .main-logo {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+      background: white;
+      padding: 10px;
+      object-fit: contain;
+    }
+    .tagline {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <!-- Updated main logo -->
+    <img
+      src="https://raw.githubusercontent.com/meetgupta12/my-deals-site/main/image/logo.png"
+      alt="SageFlix Loot Deals brand logo"
+      class="main-logo"
+      onerror="this.src='https://placehold.co/150x150/gray/white?text=No+Image'"
+    />
+
+    <h1 class="text-4xl font-bold mb-4">SageFlix Loot Deals</h1>
+    <p class="tagline">Exclusive Deals Daily from Your Favorite Brands</p>
+
+    <!-- Brand Logos -->
+    <div class="brand-logos">
+      <img
+        src="https://raw.githubusercontent.com/meetgupta12/my-deals-site/main/image/amazon.png"
+        alt="Amazon logo"
+        onerror="this.src='https://placehold.co/100x50/gray/white?text=No+Image'"
+      />
+      <img
+        src="https://raw.githubusercontent.com/meetgupta12/my-deals-site/main/image/Flipkart-Logo-2015-present.png"
+        alt="Flipkart logo"
+        onerror="this.src='https://placehold.co/100x50/gray/white?text=No+Image'"
+      />
+      <img
+        src="https://raw.githubusercontent.com/meetgupta12/my-deals-site/main/image/Ajio-Logo%20.png"
+        alt="Ajio logo"
+        onerror="this.src='https://placehold.co/100x50/gray/white?text=No+Image'"
+      />
+      <img
+        src="https://raw.githubusercontent.com/meetgupta12/my-deals-site/main/image/myntra.png"
+        alt="Myntra logo"
+        onerror="this.src='https://placehold.co/100x50/gray/white?text=No+Image'"
+      />
+    </div>
+
+    <a href="https://t.me/sageflixsales" target="_blank" rel="noopener noreferrer">
+      <button class="join-button">Join Now</button>
+    </a>
+  </div>
+</body>
+</html>
